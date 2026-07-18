@@ -1,284 +1,364 @@
-# 🛡️ Cyber Operations Center (COC) Homelab
+# Cyber Operations Center Engineering Program
 
-> **Building an enterprise-inspired Cyber Operations Center from the ground up using open-source technologies, automation, infrastructure engineering, and real-world defensive security workflows.**
+![Status](https://img.shields.io/badge/status-active%20development-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
+![Platform](https://img.shields.io/badge/platform-Ubuntu%20%7C%20Windows%20%7C%20Docker-orange)
+![Documentation](https://img.shields.io/badge/documentation-first-success)
+![Focus](https://img.shields.io/badge/focus-cybersecurity%20engineering-red)
 
----
-
-# Project Evolution
-
-This repository represents a complete redesign of my original cybersecurity home lab projects.
-
-My initial repositories focused on learning individual technologies through standalone labs such as network security, backups, DNS filtering, monitoring, and SOC fundamentals. Those projects provided an excellent foundation and helped me develop practical skills across multiple areas of cybersecurity.
-
-As my knowledge, experience, and long-term goals evolved, I realized that modern security operations are not built from isolated tools—they rely on integrated systems working together.
-
-Rather than continuing to expand several independent repositories, I made the decision to redesign everything from the ground up.
-
-This project consolidates those lessons into a single enterprise-inspired **Cyber Operations Center (COC)**. It brings together infrastructure, networking, monitoring, logging, automation, documentation, and operational workflows into one cohesive environment that reflects how modern Security Operations Centers operate.
-
-The earlier repositories remain available as historical milestones documenting where my learning journey began. This repository is now the primary focus of development and serves as the central hub for future projects, research, experimentation, and continuous improvement.
-
-This project reflects my commitment to continuous learning, technical documentation, thoughtful engineering, and building practical cybersecurity skills through hands-on implementation.
+> **Status:** 🚧 Active Development
+> **Version:** 3.0
+> **License:** MIT
+> **Maintainer:** Scott Renny
 
 ---
 
-# Overview
+# Executive Summary
 
-The Cyber Operations Center Homelab is designed to simulate many of the technologies, processes, and workflows found within enterprise security environments.
+The **Cyber Operations Center Engineering Program** is a long-term engineering initiative focused on designing, building, documenting, validating, and operating an enterprise-inspired cybersecurity environment.
 
-Rather than demonstrating isolated labs, this repository documents the design, implementation, operation, and continuous improvement of a complete security-focused infrastructure.
+Rather than being a collection of disconnected lab exercises, this repository documents the complete lifecycle of a modern cyber operations environment—from architecture and governance to deployment, detection engineering, incident response, and continuous improvement.
 
-Areas of focus include:
+Every phase is treated as an engineering project with clear objectives, documentation, validation, and lessons learned.
 
+---
+
+# Project Vision
+
+Build a professional cybersecurity engineering portfolio that demonstrates practical knowledge of:
+
+* Infrastructure Engineering
+* Network Security
 * Security Operations (SOC)
 * Detection Engineering
-* Threat Hunting
-* Incident Response
+* Threat Intelligence
 * Digital Forensics
-* Infrastructure Engineering
-* System Administration
-* Network Security
+* Endpoint Engineering
+* Incident Response
 * Automation
-* Documentation
+* Cloud Security
+* Operational Documentation
+
+The emphasis is not only on deploying technologies, but on understanding how they integrate into a secure, maintainable, and scalable operational environment.
+
+---
+
+# Program Objectives
+
+This program is built around five primary objectives:
+
+* Design an enterprise-inspired Cyber Operations Center.
+* Develop practical cybersecurity engineering skills through hands-on implementation.
+* Document every architectural decision and engineering milestone.
+* Validate configurations through repeatable testing.
+* Demonstrate continuous learning and disciplined engineering practices.
+
+---
+
+# Engineering Philosophy
+
+Every decision in this repository follows these principles:
+
+* Security by Design
+* Defense in Depth
+* Zero Trust
+* Least Privilege
+* Documentation First
+* Automation First
+* Observability
+* Continuous Validation
+* Scalability
+* Resilience
 * Continuous Improvement
 
-Every major component is documented from planning through deployment, with an emphasis on understanding **why** technologies are implemented—not just **how** they are configured.
+Technology is only one part of cybersecurity. Secure environments are created through thoughtful engineering, disciplined implementation, continuous monitoring, and comprehensive documentation.
 
 ---
 
-# Lab Environment
+# Table of Contents
 
-The Cyber Operations Center is built using a combination of physical devices, virtual machines, containers, and mobile platforms. The environment is intentionally designed to reflect a realistic, multi-platform infrastructure rather than relying on a single workstation.
-
-### Current Environment
-
-* **Windows 10 Desktop** — Primary lab workstation and testing platform
-* **Windows 11 Laptop** — Mobile administration, development, and documentation
-* **Samsung Galaxy Devices** — Mobile administration, dashboards, notifications, and validation of cross-device functionality
-
-### Planned Infrastructure
-
-* Dedicated **Windows 11 Operations Workstation**
-* **Ubuntu Server** hosting self-managed infrastructure and automation
-* Additional virtual machines for Active Directory, security testing, and enterprise simulations
-* Containerized services using Docker and Docker Compose
-* Multi-monitor operations center for monitoring, investigations, dashboards, and administration
-
-As the project evolves, systems will be upgraded, migrated, repurposed, and expanded. The objective is to document the engineering process while building a scalable Cyber Operations Center rather than maintaining a fixed hardware configuration.
+* [Repository Documentation](#repository-documentation)
+* [Current Milestone](#current-milestone)
+* [Repository Status](#repository-status)
+* [Engineering Roadmap](#engineering-roadmap)
+* [Architecture Overview](#architecture-overview)
+* [Technology Stack](#technology-stack)
+* [Repository Structure](#repository-structure)
+* [Documentation Standards](#documentation-standards)
+* [Long-Term Vision](#long-term-vision)
+* [Future Enhancements](#future-enhancements)
+* [Feedback](#feedback)
 
 ---
 
-# Project Goals
+# Repository Documentation
 
-* Build an enterprise-inspired Cyber Operations Center
-* Develop practical SOC and Blue Team skills
-* Gain hands-on experience with enterprise technologies
-* Design secure infrastructure using industry best practices
-* Create reusable automation and deployment workflows
-* Practice system administration and infrastructure engineering
-* Document every major implementation and design decision
-* Build a professional portfolio that demonstrates continuous learning and technical growth
+| Document                                                 | Description                            |
+| -------------------------------------------------------- | -------------------------------------- |
+| [README.md](README.md)                                   | Project overview                       |
+| [ROADMAP.md](ROADMAP.md)                                 | Program roadmap and engineering phases |
+| [ARCHITECTURE.md](ARCHITECTURE.md)                       | High-level system architecture         |
+| [SECURITY-PRINCIPLES.md](SECURITY-PRINCIPLES.md)         | Security engineering principles        |
+| [DOCUMENTATION-STANDARDS.md](DOCUMENTATION-STANDARDS.md) | Documentation requirements             |
+| [CONTRIBUTING.md](CONTRIBUTING.md)                       | Contribution guidelines                |
+| [CHANGELOG.md](CHANGELOG.md)                             | Version history and notable changes    |
+| [LICENSE](LICENSE)                                       | MIT License                            |
 
 ---
 
-# Architecture
+# Current Milestone
 
-The environment is designed as a modular platform that will continue to expand over time.
+The project is currently completing the **Repository Foundation** before infrastructure deployment begins.
 
-```text
-                    Internet
-                        │
-                Router / Firewall
-                        │
-               ───────────────────
-                        │
-                 Managed Network
-                        │
-      ┌──────────────┬──────────────┐
-      │              │              │
- Infrastructure   Operations    Management
-     Server       Workstations     Systems
-      │              │              │
- Docker         Windows Lab     Monitoring
-      │              │              │
- SIEM ─────── Logs ─────── Sensors
-      │
- Dashboards
+Current work includes:
+
+* Repository governance
+* Engineering documentation
+* Architecture planning
+* Standards
+* Version control
+* Project structure
+
+The next milestone is **Phase 0 – Program Governance**, followed by infrastructure deployment.
+
+---
+
+# Repository Status
+
+| Area                      | Status         |
+| ------------------------- | -------------- |
+| Repository Foundation     | ✅ Complete     |
+| Documentation Framework   | ✅ Complete     |
+| Architecture Planning     | ✅ Complete     |
+| Phase Documentation       | 🚧 In Progress |
+| Infrastructure Deployment | ⏳ Planned      |
+| Security Stack            | ⏳ Planned      |
+| Detection Engineering     | ⏳ Planned      |
+| Incident Response         | ⏳ Planned      |
+| Cloud Integration         | ⏳ Planned      |
+
+---
+
+# Engineering Roadmap
+
+```
+Program Governance
+        │
+        ▼
+Foundation
+        │
+        ▼
+Infrastructure
+        │
+        ▼
+Security
+        │
+        ▼
+Detection Engineering
+        │
+        ▼
+Security Operations
+        │
+        ▼
+Validation
+        │
+        ▼
+Cloud Integration
+        │
+        ▼
+Continuous Improvement
 ```
 
-Additional systems and integrations will be added as the project grows.
+The detailed roadmap is available in **ROADMAP.md**.
 
 ---
 
-# Current & Planned Technologies
+# Architecture Overview
 
-## Operating Systems
+```
+                          Internet
+                              │
+                              ▼
+                       WireGuard VPN
+                              │
+                              ▼
+                        Omada Network
+                              │
+                              ▼
+                         Ubuntu Server
+                              │
+                              ▼
+                     Docker Container Platform
+                              │
+ ┌──────────────────┬──────────────────┬──────────────────┐
+ ▼                  ▼                  ▼
+Monitoring     Security Stack     Core Services
 
-* Windows 11
-* Windows Server
-* Ubuntu Server
-* Kali Linux
+Grafana        Wazuh              Nextcloud
+Prometheus     Zeek               Identity
+NET-WATCH      Suricata           Backup
+               Graylog            Media Server
+               TheHive
+               Cortex
+               Velociraptor
+               MISP
+```
+
+See **ARCHITECTURE.md** for additional diagrams and design details.
+
+---
+
+# Technology Stack
 
 ## Infrastructure
 
+* Ubuntu Server
+* Windows 11 Pro (planned)
+* Windows 11 Home
 * Docker
 * Docker Compose
-* VirtualBox
-* Git
-* GitHub
-
-## Networking
-
-* DNS
-* DHCP
-* VLANs
-* VPN
-* Firewall Management
-* Static Addressing
-
-## Security
-
-* Wazuh
-* Sysmon
-* Windows Event Logging
-* Security Onion *(planned)*
-* Suricata *(planned)*
-* Zeek *(planned)*
+* WireGuard
+* Omada Networking
 
 ## Monitoring
 
 * Grafana
 * Prometheus
-* Uptime Kuma
+* NET-WATCH
 
-## Automation
+## Security Operations
 
-* Python
-* Bash
-* PowerShell
+* Wazuh
+* Zeek
+* Suricata
+* Graylog
+
+## Threat Intelligence
+
+* MISP
+
+## Incident Response
+
+* TheHive
+* Cortex
+
+## Digital Forensics
+
+* Velociraptor
+
+## Identity
+
+* Active Directory
+* Role-Based Access Control (RBAC)
 
 ---
 
 # Repository Structure
 
-```text
-cyber-operations-center-homelab/
+```
+cyber-operations-center-engineering-program/
 
-├── architecture/
+├── README.md
+├── LICENSE
+├── ROADMAP.md
+├── ARCHITECTURE.md
+├── SECURITY-PRINCIPLES.md
+├── DOCUMENTATION-STANDARDS.md
+├── CONTRIBUTING.md
+├── CHANGELOG.md
+│
+├── docs/
+│   ├── decisions/
 │   ├── diagrams/
-│   ├── network/
-│   └── documentation/
+│   ├── validation/
+│   └── screenshots/
 │
-├── cyber-operations-center/
-│   ├── dashboards/
-│   ├── detections/
-│   ├── playbooks/
-│   ├── incidents/
-│   └── reports/
-│
-├── engineering/
-│   ├── automation/
-│   ├── docker/
-│   ├── scripts/
-│   └── infrastructure/
-│
-├── operations/
-│   ├── server/
-│   ├── networking/
-│   ├── monitoring/
-│   └── hardening/
-│
-├── project-management/
-│   ├── roadmap/
-│   ├── milestones/
-│   ├── changelog/
-│   └── documentation/
+├── phases/
+│   ├── phase-00/
+│   ├── phase-01/
+│   ├── phase-02/
+│   └── ...
 │
 └── assets/
-    ├── images/
-    ├── screenshots/
-    └── branding/
 ```
 
 ---
 
-# Roadmap
+# Documentation Standards
 
-## Phase 1 – Foundation
+Each implementation phase is expected to include:
 
-* Repository design
-* Documentation standards
-* Infrastructure planning
-* Network architecture
+* Objectives
+* Requirements
+* Architecture
+* Installation
+* Configuration
+* Validation
+* Security Considerations
+* Troubleshooting
+* Lessons Learned
+* Future Improvements
+* Diagrams
+* Screenshots
 
-## Phase 2 – Core Infrastructure
+Documentation is treated as a first-class engineering deliverable.
 
-* Ubuntu Server
-* Docker platform
-* Self-hosted services
-* Monitoring stack
+---
 
-## Phase 3 – Enterprise Environment
+# Long-Term Vision
 
-* Windows Server
-* Active Directory
-* Windows clients
-* Centralized logging
+When complete, this program will demonstrate practical engineering experience across:
 
-## Phase 4 – Security Operations
-
-* SIEM
+* Cybersecurity Engineering
+* Infrastructure Engineering
+* Security Operations
 * Detection Engineering
-* Dashboards
 * Threat Hunting
-
-## Phase 5 – Incident Response
-
 * Digital Forensics
-* Malware Analysis
-* Incident Response Playbooks
-* Security Automation
+* Incident Response
+* Threat Intelligence
+* Endpoint Management
+* Automation
+* Network Engineering
+* Cloud Security
 
-## Phase 6 – Expansion
-
-* Advanced integrations
-* Infrastructure optimization
-* Portfolio enhancements
-* Continuous improvement
+The objective is to understand how enterprise security technologies operate together—not simply how to install them individually.
 
 ---
 
-# Documentation Philosophy
+# Future Enhancements
 
-Every implementation should answer four questions:
+Planned additions include:
 
-* **Why** was this technology selected?
-* **How** was it implemented?
-* **What** challenges were encountered?
-* **What** improvements are planned?
-
-The goal is to document the engineering process as thoroughly as the finished solution so that others can understand both the technical implementation and the reasoning behind each decision.
-
----
-
-# Project Status
-
-🚧 **Actively Under Development**
-
-This repository is continuously evolving as new technologies, capabilities, documentation, and improvements are added.
+* Architecture Decision Records (ADRs)
+* Infrastructure diagrams
+* Detection rules
+* SIEM dashboards
+* Threat hunting playbooks
+* Incident response workflows
+* Automation pipelines
+* Validation reports
+* Network diagrams
+* Operational runbooks
+* Performance benchmarks
+* Lessons learned for every completed phase
 
 ---
 
-# License
+# Why This Repository Exists
 
-Released under the MIT License.
+This repository serves as a living engineering portfolio that demonstrates technical growth through disciplined planning, implementation, validation, and documentation.
+
+Every deployment, configuration change, architectural decision, and operational improvement is recorded to create a transparent engineering history that reflects real-world cybersecurity practices.
 
 ---
 
-# About the Author
+# Feedback
 
-I'm building this Cyber Operations Center to deepen my practical cybersecurity skills through hands-on engineering, continuous learning, and detailed technical documentation.
+Constructive feedback, technical discussions, and suggestions for improvement are always welcome.
 
-My objective is to create an enterprise-inspired environment that demonstrates not only technical knowledge, but also the ability to design, operate, document, secure, troubleshoot, and continuously improve complex systems over time.
+Continuous learning and continuous improvement are core principles of this program.
 
-This repository represents that ongoing journey.
+---
+
+> **Build deliberately. Validate continuously. Document everything.**
