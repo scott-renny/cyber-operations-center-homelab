@@ -6,266 +6,314 @@
 ![Documentation](https://img.shields.io/badge/documentation-first-success)
 ![Focus](https://img.shields.io/badge/focus-cybersecurity%20engineering-red)
 
-> **Status:** 🚧 Active Development
-> **Version:** 3.0
-> **License:** MIT
+> **Status:** 🚧 Active Development  
+> **Version:** 3.1  
+> **License:** MIT  
 > **Maintainer:** Scott Renny
 
 ---
 
-# Executive Summary
+## Executive Summary
 
 The **Cyber Operations Center Engineering Program** is a long-term engineering initiative focused on designing, building, documenting, validating, and operating an enterprise-inspired cybersecurity environment.
 
-Rather than being a collection of disconnected lab exercises, this repository documents the complete lifecycle of a modern cyber operations environment—from architecture and governance to deployment, detection engineering, incident response, and continuous improvement.
+Rather than functioning as a collection of disconnected lab exercises, this repository documents the complete lifecycle of a modern cyber operations environment—from architecture and governance through infrastructure deployment, monitoring, detection engineering, incident response, and continuous improvement.
 
-Every phase is treated as an engineering project with clear objectives, documentation, validation, and lessons learned.
+Every phase is treated as an engineering project with defined objectives, requirements, implementation steps, validation evidence, operational considerations, and lessons learned.
 
 ---
 
-# Project Vision
+## Project Vision
 
 Build a professional cybersecurity engineering portfolio that demonstrates practical knowledge of:
 
-* Infrastructure Engineering
-* Network Security
-* Security Operations (SOC)
-* Detection Engineering
-* Threat Intelligence
-* Digital Forensics
-* Endpoint Engineering
-* Incident Response
-* Automation
-* Cloud Security
-* Operational Documentation
+- Infrastructure Engineering
+- Network Security
+- Security Operations
+- Detection Engineering
+- Threat Intelligence
+- Digital Forensics
+- Endpoint Engineering
+- Incident Response
+- Automation
+- Cloud Security
+- Operational Documentation
 
-The emphasis is not only on deploying technologies, but on understanding how they integrate into a secure, maintainable, and scalable operational environment.
+The focus is not simply on deploying individual technologies. The program is designed to demonstrate how systems, services, security controls, telemetry sources, and operational processes integrate into a secure, maintainable, and scalable environment.
 
 ---
 
-# Program Objectives
+## Program Objectives
 
 This program is built around five primary objectives:
 
-* Design an enterprise-inspired Cyber Operations Center.
-* Develop practical cybersecurity engineering skills through hands-on implementation.
-* Document every architectural decision and engineering milestone.
-* Validate configurations through repeatable testing.
-* Demonstrate continuous learning and disciplined engineering practices.
+- Design an enterprise-inspired Cyber Operations Center.
+- Develop practical cybersecurity engineering skills through hands-on implementation.
+- Document architectural decisions and engineering milestones.
+- Validate configurations through repeatable testing.
+- Demonstrate disciplined engineering practices and continuous improvement.
 
 ---
 
-# Engineering Philosophy
+## Engineering Philosophy
 
 Every decision in this repository follows these principles:
 
-* Security by Design
-* Defense in Depth
-* Zero Trust
-* Least Privilege
-* Documentation First
-* Automation First
-* Observability
-* Continuous Validation
-* Scalability
-* Resilience
-* Continuous Improvement
+- Security by Design
+- Defense in Depth
+- Zero Trust
+- Least Privilege
+- Documentation First
+- Automation First
+- Observability
+- Continuous Validation
+- Scalability
+- Resilience
+- Continuous Improvement
 
-Technology is only one part of cybersecurity. Secure environments are created through thoughtful engineering, disciplined implementation, continuous monitoring, and comprehensive documentation.
-
----
-
-# Table of Contents
-
-* [Repository Documentation](#repository-documentation)
-* [Current Milestone](#current-milestone)
-* [Repository Status](#repository-status)
-* [Engineering Roadmap](#engineering-roadmap)
-* [Architecture Overview](#architecture-overview)
-* [Technology Stack](#technology-stack)
-* [Repository Structure](#repository-structure)
-* [Documentation Standards](#documentation-standards)
-* [Long-Term Vision](#long-term-vision)
-* [Future Enhancements](#future-enhancements)
-* [Feedback](#feedback)
+Technology is only one component of cybersecurity. Secure environments are created through thoughtful design, disciplined implementation, continuous monitoring, repeatable validation, and comprehensive documentation.
 
 ---
 
-# Repository Documentation
+## Table of Contents
 
-| Document                                                 | Description                            |
-| -------------------------------------------------------- | -------------------------------------- |
-| [README.md](README.md)                                   | Project overview                       |
-| [ROADMAP.md](ROADMAP.md)                                 | Program roadmap and engineering phases |
-| [ARCHITECTURE.md](ARCHITECTURE.md)                       | High-level system architecture         |
-| [SECURITY-PRINCIPLES.md](SECURITY-PRINCIPLES.md)         | Security engineering principles        |
-| [DOCUMENTATION-STANDARDS.md](DOCUMENTATION-STANDARDS.md) | Documentation requirements             |
-| [CONTRIBUTING.md](CONTRIBUTING.md)                       | Contribution guidelines                |
-| [CHANGELOG.md](CHANGELOG.md)                             | Version history and notable changes    |
-| [LICENSE](LICENSE)                                       | MIT License                            |
+- [Repository Documentation](#repository-documentation)
+- [Current Milestone](#current-milestone)
+- [Repository Status](#repository-status)
+- [Engineering Roadmap](#engineering-roadmap)
+- [Architecture Overview](#architecture-overview)
+- [Technology Stack](#technology-stack)
+- [Repository Structure](#repository-structure)
+- [Documentation Standards](#documentation-standards)
+- [Long-Term Vision](#long-term-vision)
+- [Future Enhancements](#future-enhancements)
+- [Why This Repository Exists](#why-this-repository-exists)
+- [Feedback](#feedback)
 
 ---
 
-# Current Milestone
+## Repository Documentation
 
-The project is currently completing the **Repository Foundation** before infrastructure deployment begins.
+| Document | Description |
+|---|---|
+| [README.md](README.md) | Program overview and repository landing page |
+| [ROADMAP.md](ROADMAP.md) | Program roadmap and engineering phases |
+| [ARCHITECTURE.md](ARCHITECTURE.md) | High-level system architecture |
+| [SECURITY-PRINCIPLES.md](SECURITY-PRINCIPLES.md) | Security engineering principles |
+| [DOCUMENTATION-STANDARDS.md](DOCUMENTATION-STANDARDS.md) | Documentation requirements and expectations |
+| [RISK-REGISTER.md](RISK-REGISTER.md) | Program risks, mitigations, ownership, and review practices |
+| [CONTRIBUTING.md](CONTRIBUTING.md) | Contribution and change-management guidelines |
+| [CHANGELOG.md](CHANGELOG.md) | Version history and notable changes |
+| [LICENSE](LICENSE) | MIT License |
+
+---
+
+## Current Milestone
+
+The program is currently finalizing the **Repository Foundation** before beginning Phase 0 documentation.
 
 Current work includes:
 
-* Repository governance
-* Engineering documentation
-* Architecture planning
-* Standards
-* Version control
-* Project structure
+- Repository governance
+- Engineering documentation
+- Architecture planning
+- Security principles
+- Documentation standards
+- Risk management
+- Version control
+- Branch strategy
+- Project structure
 
-The next milestone is **Phase 0 – Program Governance**, followed by infrastructure deployment.
+The next milestone is:
 
----
+> **Phase 0 — Program Governance**
 
-# Repository Status
-
-| Area                      | Status         |
-| ------------------------- | -------------- |
-| Repository Foundation     | ✅ Complete     |
-| Documentation Framework   | ✅ Complete     |
-| Architecture Planning     | ✅ Complete     |
-| Phase Documentation       | 🚧 In Progress |
-| Infrastructure Deployment | ⏳ Planned      |
-| Security Stack            | ⏳ Planned      |
-| Detection Engineering     | ⏳ Planned      |
-| Incident Response         | ⏳ Planned      |
-| Cloud Integration         | ⏳ Planned      |
+Phase 0 will establish the program charter, scope, requirements, asset inventory, decision-management process, risk-review process, and completion criteria used throughout the remaining engineering phases.
 
 ---
 
-# Engineering Roadmap
+## Repository Status
 
-```
+| Area | Status |
+|---|---|
+| Repository Foundation | 🚧 Finalizing |
+| Documentation Framework | ✅ Complete |
+| Architecture Planning | ✅ Complete |
+| Security Principles | ✅ Complete |
+| Initial Risk Register | ✅ Complete |
+| Phase 0 Documentation | ⏳ Planned |
+| Infrastructure Deployment | ⏳ Planned |
+| Security Stack | ⏳ Planned |
+| Detection Engineering | ⏳ Planned |
+| Incident Response | ⏳ Planned |
+| Cloud Integration | ⏳ Planned |
+
+Status definitions:
+
+- ✅ **Complete** — Documented and reviewed
+- 🚧 **In Progress** — Currently being developed
+- ⏳ **Planned** — Approved for future implementation
+
+---
+
+## Engineering Roadmap
+
+```text
 Program Governance
         │
         ▼
 Foundation
         │
         ▼
-Infrastructure
+Base Hardening
         │
         ▼
-Security
+Container Platform
+        │
+        ▼
+Core Network and Security Services
+        │
+        ▼
+Monitoring and Telemetry
+        │
+        ▼
+Endpoint Engineering
+        │
+        ▼
+Identity and Access Management
         │
         ▼
 Detection Engineering
         │
         ▼
+Incident Response and SOAR
+        │
+        ▼
+Digital Forensics
+        │
+        ▼
+Purple Team Validation
+        │
+        ▼
 Security Operations
         │
         ▼
-Validation
-        │
-        ▼
-Cloud Integration
+Cloud and Infrastructure Expansion
         │
         ▼
 Continuous Improvement
 ```
 
-The detailed roadmap is available in **ROADMAP.md**.
+The detailed 26-phase engineering plan is available in [ROADMAP.md](ROADMAP.md).
 
 ---
 
-# Architecture Overview
+## Architecture Overview
 
+```text
+                           Internet
+                               │
+                               ▼
+                        WireGuard VPN
+                               │
+                               ▼
+                         Omada Network
+                               │
+                               ▼
+                          Ubuntu Server
+                               │
+                               ▼
+                      Docker Container Platform
+                               │
+      ┌────────────────────────┼────────────────────────┐
+      ▼                        ▼                        ▼
+  Monitoring              Security Stack          Core Services
+
+  Grafana                 Wazuh                   Nextcloud
+  Prometheus              Zeek                    Identity
+  NET-WATCH               Suricata                Backup
+                          Graylog                 Media Services
+                          TheHive
+                          Cortex
+                          Velociraptor
+                          MISP
 ```
-                          Internet
-                              │
-                              ▼
-                       WireGuard VPN
-                              │
-                              ▼
-                        Omada Network
-                              │
-                              ▼
-                         Ubuntu Server
-                              │
-                              ▼
-                     Docker Container Platform
-                              │
- ┌──────────────────┬──────────────────┬──────────────────┐
- ▼                  ▼                  ▼
-Monitoring     Security Stack     Core Services
 
-Grafana        Wazuh              Nextcloud
-Prometheus     Zeek               Identity
-NET-WATCH      Suricata           Backup
-               Graylog            Media Server
-               TheHive
-               Cortex
-               Velociraptor
-               MISP
-```
+This diagram represents the intended high-level architecture. Components marked as planned will be introduced and validated during their corresponding roadmap phases.
 
-See **ARCHITECTURE.md** for additional diagrams and design details.
+See [ARCHITECTURE.md](ARCHITECTURE.md) for additional architectural details.
 
 ---
 
-# Technology Stack
+## Technology Stack
 
-## Infrastructure
+The following technologies are planned or currently available within the environment.
 
-* Ubuntu Server
-* Windows 11 Pro (planned)
-* Windows 11 Home
-* Docker
-* Docker Compose
-* WireGuard
-* Omada Networking
+### Infrastructure
 
-## Monitoring
+- Ubuntu Server
+- Windows 11 Pro
+- Windows 11 Home
+- Docker
+- Docker Compose
+- WireGuard
+- Omada Networking
 
-* Grafana
-* Prometheus
-* NET-WATCH
+### Monitoring and Observability
 
-## Security Operations
+- Grafana
+- Prometheus
+- NET-WATCH
 
-* Wazuh
-* Zeek
-* Suricata
-* Graylog
+### Security Operations
 
-## Threat Intelligence
+- Wazuh
+- Zeek
+- Suricata
+- Graylog
 
-* MISP
+### Threat Intelligence
 
-## Incident Response
+- MISP
 
-* TheHive
-* Cortex
+### Incident Response
 
-## Digital Forensics
+- TheHive
+- Cortex
 
-* Velociraptor
+### Digital Forensics
 
-## Identity
+- Velociraptor
 
-* Active Directory
-* Role-Based Access Control (RBAC)
+### Identity and Access Management
+
+- Active Directory
+- Role-Based Access Control
+- Least-privilege administration
+
+Technology names in this section represent the planned program architecture and should not be interpreted as completed implementations unless supported by phase documentation and validation evidence.
 
 ---
 
-# Repository Structure
+## Repository Structure
 
-```
+```text
 cyber-operations-center-engineering-program/
-
-├── README.md
+│
+├── .gitignore
 ├── LICENSE
+├── README.md
 ├── ROADMAP.md
 ├── ARCHITECTURE.md
 ├── SECURITY-PRINCIPLES.md
 ├── DOCUMENTATION-STANDARDS.md
+├── RISK-REGISTER.md
 ├── CONTRIBUTING.md
 ├── CHANGELOG.md
+│
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   └── PULL_REQUEST_TEMPLATE.md
 │
 ├── docs/
 │   ├── decisions/
@@ -274,88 +322,110 @@ cyber-operations-center-engineering-program/
 │   └── screenshots/
 │
 ├── phases/
-│   ├── phase-00/
-│   ├── phase-01/
-│   ├── phase-02/
+│   ├── phase-00-program-governance/
+│   ├── phase-01-foundation/
+│   ├── phase-02-base-hardening/
 │   └── ...
 │
 └── assets/
 ```
 
+Directories shown above may be introduced incrementally as the corresponding documentation and implementation work begins.
+
 ---
 
-# Documentation Standards
+## Documentation Standards
 
 Each implementation phase is expected to include:
 
-* Objectives
-* Requirements
-* Architecture
-* Installation
-* Configuration
-* Validation
-* Security Considerations
-* Troubleshooting
-* Lessons Learned
-* Future Improvements
-* Diagrams
-* Screenshots
+- Purpose
+- Objectives
+- Scope
+- Requirements
+- Dependencies
+- Architecture
+- Implementation
+- Configuration
+- Security Considerations
+- Validation
+- Troubleshooting
+- Operational Procedures
+- Lessons Learned
+- Known Limitations
+- Future Improvements
+- Supporting Diagrams
+- Screenshots or Evidence
 
 Documentation is treated as a first-class engineering deliverable.
 
+A phase is not considered complete solely because a service has been installed. Completion requires documented implementation, security review, validation evidence, and operational understanding.
+
+See [DOCUMENTATION-STANDARDS.md](DOCUMENTATION-STANDARDS.md) for the full requirements.
+
 ---
 
-# Long-Term Vision
+## Long-Term Vision
 
 When complete, this program will demonstrate practical engineering experience across:
 
-* Cybersecurity Engineering
-* Infrastructure Engineering
-* Security Operations
-* Detection Engineering
-* Threat Hunting
-* Digital Forensics
-* Incident Response
-* Threat Intelligence
-* Endpoint Management
-* Automation
-* Network Engineering
-* Cloud Security
+- Cybersecurity Engineering
+- Infrastructure Engineering
+- Security Operations
+- Detection Engineering
+- Threat Hunting
+- Digital Forensics
+- Incident Response
+- Threat Intelligence
+- Endpoint Management
+- Identity and Access Management
+- Security Automation
+- Network Engineering
+- Cloud Security
+- Backup and Recovery
+- Operational Documentation
 
 The objective is to understand how enterprise security technologies operate together—not simply how to install them individually.
 
 ---
 
-# Future Enhancements
+## Future Enhancements
 
-Planned additions include:
+Planned repository additions include:
 
-* Architecture Decision Records (ADRs)
-* Infrastructure diagrams
-* Detection rules
-* SIEM dashboards
-* Threat hunting playbooks
-* Incident response workflows
-* Automation pipelines
-* Validation reports
-* Network diagrams
-* Operational runbooks
-* Performance benchmarks
-* Lessons learned for every completed phase
+- Architecture Decision Records
+- Infrastructure diagrams
+- Network trust-zone diagrams
+- Asset and service inventories
+- Detection rules
+- SIEM dashboards
+- Threat-hunting playbooks
+- Incident-response workflows
+- SOAR automation
+- Validation reports
+- Operational runbooks
+- Recovery procedures
+- Performance benchmarks
+- Configuration templates
+- Phase completion reports
+- Lessons learned for every completed phase
+
+Tool-specific topics and repository metadata will be added as technologies are implemented and supported by meaningful documentation.
 
 ---
 
-# Why This Repository Exists
+## Why This Repository Exists
 
 This repository serves as a living engineering portfolio that demonstrates technical growth through disciplined planning, implementation, validation, and documentation.
 
-Every deployment, configuration change, architectural decision, and operational improvement is recorded to create a transparent engineering history that reflects real-world cybersecurity practices.
+Every deployment, configuration change, architectural decision, validation result, operational improvement, and lesson learned is recorded to create a transparent engineering history that reflects real-world cybersecurity practices.
+
+The value of the program is not measured only by the number of technologies deployed. It is measured by how deliberately those technologies are selected, secured, integrated, validated, operated, and improved.
 
 ---
 
-# Feedback
+## Feedback
 
-Constructive feedback, technical discussions, and suggestions for improvement are always welcome.
+Constructive feedback, technical discussion, and suggestions for improvement are welcome.
 
 Continuous learning and continuous improvement are core principles of this program.
 
